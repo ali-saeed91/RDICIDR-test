@@ -33,3 +33,8 @@ jobs:
       
       - name: Checkout the repo on the Staging Server
         run: ssh staging git clone "https://github.com/ali-saeed91/RDICIDR.git"
+
+      - name: Test the App
+        run: |
+            ssh staging cd RDICIDR && touch wow.txt
+            echo "this is a test" >> wow.txt
