@@ -37,4 +37,4 @@ jobs:
       - name: Test the App
         run: |
             ssh staging cd RDICIDR && touch wow.txt
-            echo "this is a test" >> wow.txt
+            echo "this is a tests" >> wow.txt
