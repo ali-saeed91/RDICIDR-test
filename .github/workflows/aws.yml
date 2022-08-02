@@ -32,4 +32,4 @@ jobs:
           SSH_HOST: ${{ secrets.SSH_HOST }}
       
       - name: Checkout the repo on the Staging Server
-        run: git clone "https://github.com/ali-saeed91/RDICIDR.git"
+        run: ssh staging git clone "https://github.com/ali-saeed91/RDICIDR.git"
